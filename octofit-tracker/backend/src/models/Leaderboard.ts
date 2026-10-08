@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose';
 import { schemaOptions } from './schemaOptions.js';
 
-const leaderboardEntrySchema = new Schema(
+const leaderboardSchema = new Schema(
   {
     _id: { type: String, required: true },
     rank: { type: Number, required: true },
@@ -13,4 +13,4 @@ const leaderboardEntrySchema = new Schema(
   { ...schemaOptions, collection: 'leaderboard' },
 );
 
-export const LeaderboardEntry = model('LeaderboardEntry', leaderboardEntrySchema);
+export const Leaderboard = model('Leaderboard', leaderboardSchema);

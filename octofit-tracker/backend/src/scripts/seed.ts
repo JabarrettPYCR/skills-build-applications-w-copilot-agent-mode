@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import { Activity } from '../models/Activity.js';
-import { LeaderboardEntry } from '../models/LeaderboardEntry.js';
+import { Leaderboard } from '../models/Leaderboard.js';
 import { Team } from '../models/Team.js';
 import { User } from '../models/User.js';
 import { Workout } from '../models/Workout.js';
@@ -21,7 +21,7 @@ async function seedDatabase() {
       User.deleteMany({}),
       Team.deleteMany({}),
       Activity.deleteMany({}),
-      LeaderboardEntry.deleteMany({}),
+      Leaderboard.deleteMany({}),
       Workout.deleteMany({}),
     ]);
 
@@ -102,7 +102,7 @@ async function seedDatabase() {
       },
     ]);
 
-    await LeaderboardEntry.insertMany([
+    await Leaderboard.insertMany([
       {
         _id: 'leaderboard-ava',
         rank: 1,
