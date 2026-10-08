@@ -1,0 +1,198 @@
+.app-shell {
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.app-header {
+  align-items: end;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin: 0 auto 28px;
+  max-width: 1180px;
+}
+
+.eyebrow {
+  color: #2f6f68;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.app-header h1 {
+  color: #17221f;
+  font-size: clamp(2rem, 5vw, 4.75rem);
+  font-weight: 900;
+  line-height: 0.95;
+  margin: 0;
+  max-width: 720px;
+}
+
+.nav-tabs {
+  background: #ffffff;
+  border: 1px solid #d9ded5;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 6px;
+}
+
+.nav-link {
+  border-radius: 6px;
+  color: #4f5f58;
+  font-weight: 700;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: #123c36;
+  color: #ffffff;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.resource-panel {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid #d9ded5;
+  border-radius: 8px;
+  box-shadow: 0 24px 80px rgba(36, 48, 43, 0.1);
+  padding: 24px;
+}
+
+.resource-heading {
+  align-items: start;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.resource-heading h2 {
+  color: #17221f;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 850;
+  margin: 0;
+}
+
+.api-pill {
+  background: #edf4ef;
+  border: 1px solid #c9d9ce;
+  border-radius: 999px;
+  color: #315048;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+  max-width: min(100%, 460px);
+  overflow-wrap: anywhere;
+  padding: 8px 12px;
+}
+
+.status-message {
+  background: #edf4ef;
+  border-radius: 8px;
+  color: #315048;
+  margin: 0;
+  padding: 18px;
+}
+
+.status-message.error {
+  background: #fff0ed;
+  color: #9b2c1f;
+}
+
+.resource-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: var(--columns);
+}
+
+.resource-card {
+  background: #ffffff;
+  border: 1px solid #dde2d9;
+  border-radius: 8px;
+  min-width: 0;
+  padding: 18px;
+}
+
+.resource-card h3 {
+  color: #17221f;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+  text-transform: capitalize;
+}
+
+.resource-card p {
+  color: #5f6e67;
+  margin: 0 0 16px;
+}
+
+.leaderboard-card {
+  position: relative;
+}
+
+.rank {
+  background: #f4b740;
+  border-radius: 999px;
+  color: #241806;
+  display: inline-flex;
+  font-weight: 900;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+}
+
+dl {
+  display: grid;
+  gap: 8px 12px;
+  grid-template-columns: max-content minmax(0, 1fr);
+  margin: 0;
+  text-align: left;
+}
+
+dt {
+  color: #6c7a73;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+dd {
+  color: #25332e;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    padding: 18px;
+  }
+
+  .app-header {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+  }
+
+  .nav-tabs {
+    width: 100%;
+  }
+
+  .nav-link {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .resource-heading {
+    flex-direction: column;
+  }
+
+  .resource-panel {
+    padding: 18px;
+  }
+}

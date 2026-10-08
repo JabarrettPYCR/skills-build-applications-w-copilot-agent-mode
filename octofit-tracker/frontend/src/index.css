@@ -1,0 +1,29 @@
+:root {
+  color: #25332e;
+  font-family: Avenir Next, Avenir, Gill Sans, Trebuchet MS, sans-serif;
+  font-synthesis: none;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background:
+    linear-gradient(135deg, rgba(244, 183, 64, 0.24), rgba(47, 111, 104, 0.08) 34%, transparent 34%),
+    radial-gradient(circle at top right, rgba(235, 94, 72, 0.14), transparent 32%),
+    #f7f4ea;
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
